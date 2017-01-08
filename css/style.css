@@ -1,0 +1,97 @@
+/*  Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*  Top Level Elements  */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*-----------------------*/
+/*         HEADER        */
+/*-----------------------*/
+
+header {
+    background-color: rgba(0, 0, 0, 0.80);
+    height: 50px;
+}
+
+/*  Logo  */
+
+.logo h1 {
+    float: left;
+    margin: 15px 30px;
+    color: white;
+}
+
+/*  Nav Bar  */
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0 20px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*--------------------------*/
+/*        WALLPAPER         */
+/*--------------------------*/
+
+#wall {
+    height: 100vh;
+    background-color: #486f79;
+}
+
+/*--------------------------*/
+/*          FOOTER          */
+/*--------------------------*/
+
+footer {
+    height: 100px;
+    background-color:  rgba(0, 0, 0, 0.80);
+}
+
+#contact {
+    height: 100%;
+}
+
+.contact{
+    height: 100%;
+    width: 30%;
+    float: left;
+    margin: 0 1.6%;
+    background-color: firebrick;
+}
+
+#copyright {
+    background-color: black;
+    color: maroon;
+}
