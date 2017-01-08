@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d04a439e-6fa9-413e-8e2e-19d59be54681" name="Default" comment="Structure created. Header and Footer content needs to be added.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/venkatp.com.iml" afterPath="" />
+    <list default="true" id="d04a439e-6fa9-413e-8e2e-19d59be54681" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -208,12 +203,20 @@
       <workItem from="1483904800651" duration="2193000" />
       <workItem from="1483908119915" duration="5569000" />
       <workItem from="1483913724994" duration="683000" />
-      <workItem from="1483914425603" duration="212000" />
+      <workItem from="1483914425603" duration="218000" />
     </task>
+    <task id="LOCAL-00001" summary="Structure created. Header and Footer content needs to be added.">
+      <created>1483914641669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1483914641669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8657000" />
+    <option name="totallyTimeSpent" value="8663000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
