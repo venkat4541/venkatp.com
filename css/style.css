@@ -16,6 +16,56 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    /*font-size: 1.1em;*/
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+li {
+    padding-top: 20px;
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+
+table {
+    line-height: 50px;
+}
+
+form {
+    border: solid 1px #f3f3f3;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+input {
+    border: solid 1px white;
+    padding: 5px;
+    background-color: #f3f3f3;
+}
+
+textarea {
+    border: solid 1px white;
+    padding: 18px;
+    background-color: #f3f3f3;
 }
 
 .container {
@@ -23,7 +73,16 @@ html, body {
 }
 
 .page {
-    height: 100vh;
+    margin: 0 auto;
+    padding: 30px;
+    /*height: 100vh;*/
+}
+
+.page li:before {
+    content: '> ';
+}
+.wrap {
+    padding: 50px 30px;
 }
 
 /*-----------------------*/
@@ -55,7 +114,7 @@ header {
 /*  Nav Bar  */
 
 nav ul {
-    list-style: none;
+    list-style: none !important;
     float: right;
     margin: 0 20px;
 }
@@ -66,7 +125,7 @@ nav li {
 }
 
 .nav-item {
-    padding: 28px 15px;
+    padding: 29px 15px;
 }
 
 .nav-item a {
@@ -84,16 +143,68 @@ li a:hover {
 /*        WALLPAPER         */
 /*--------------------------*/
 
-#wall {
-    background-color: #486f79;
+
+@media only screen and (min-width: 1600px) {
+    .wall {
+        background: url("../assets/drawing-pad-12097811_1920.jpg");
+        background-size: cover;
+        height: 1000px;
+        /*background: url('../assets/white-gradient.png') no-repeat center;*/
+    }
+
+    .page {
+        width: 50%;
+    }
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+    .wall {
+        background: url("../assets/drawing-pad-1209781_1280.jpg");
+        background-size: cover;
+        height: 900px;
+        /*background: url('../assets/white-gradient.png') no-repeat center;*/
+    }
+
+    .page {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .wall {
+        background: url("../assets/drawing-pad-1209781_640.jpg");
+        background-size: cover;
+        height: 900px;
+        /*background: url('../assets/white-gradient.png') no-repeat center;*/
+    }
+}
 /*--------------------------*/
 /*          SKILLS          */
 /*--------------------------*/
 
 #skills {
-    background-color: #F0EAD6;
+    background: rgba(61, 69, 87, 1);;
+}
+
+.skills {
+    background-color: rgba(61, 69, 87, 1);
+    color: white;
+}
+
+.skills li {
+    list-style: none !important;
+}
+
+/*.skills li {*/
+    /*padding-bottom: 25px;*/
+/*}*/
+
+#skills h1 {
+    color: #FFFFFF;
+}
+
+.tb-right {
+    padding-left: 15px;
 }
 
 /*--------------------------*/
@@ -101,7 +212,11 @@ li a:hover {
 /*--------------------------*/
 
 #experience {
-    background-color: #FFFFFF;
+}
+
+.experience p, .education p{
+    float: right;
+    padding-right: 13%;
 }
 
 /*--------------------------*/
@@ -109,7 +224,11 @@ li a:hover {
 /*--------------------------*/
 
 #education {
-    background-color: #F0EAD6;
+    background: url("../assets/paper.png");
+}
+
+.education {
+    background: url("../assets/paper.png");
 }
 
 /*--------------------------*/
@@ -117,33 +236,96 @@ li a:hover {
 /*--------------------------*/
 
 #projects {
-    background-color: #FFFFFF;
+    background-color: rgba(61, 69, 87, 1);
 }
 
+.projects {
+    background-color: rgba(61, 69, 87, 1);
+    color: white;
+    line-height: 30px;
+}
 
+.projects h2 {
+    margin-top: 30px;
+}
+
+/*--------------------------*/
+/*          CONTACT         */
+/*--------------------------*/
+
+#contact {
+    background: url("../assets/paper.png");
+    /*background-image:url('../assets/white-gradient.png');*/
+    /*background-position:center center;*/
+    /*background-repeat:no-repeat;*/
+    /*background-attachment:scroll;*/
+    /*background-size:cover;*/
+}
+
+.contact {
+    background: #fff;
+}
+
+.btn-div {
+    padding-top: 30px;
+}
+
+.send {
+    padding: 8px;
+    background-color: seagreen;
+    border-radius: 3px;
+    width: 250px;
+}
+
+.res {
+    padding: 8px;
+    background-color: indianred;
+    border-radius: 3px;
+}
 
 /*--------------------------*/
 /*          FOOTER          */
 /*--------------------------*/
 
 footer {
-    height: 100px;
+    height: 200px;
     background-color:  rgba(0, 0, 0, 0.80);
+    background: url("../assets/binding-dark.png") #333;
 }
 
-#contact {
-    height: 100%;
+footer ul {
+    margin-bottom: 0;
 }
 
-.contact{
-    height: 100%;
-    width: 30%;
+#footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer{
     float: left;
-    margin: 0 1.6%;
-    background-color: firebrick;
+    padding: 20px 20px;
+    color: #FFFFFF;
+    /*background-color: firebrick;*/
 }
 
-#copyright {
-    background-color: black;
-    color: maroon;
+#footer1 {
+    width: 25%;
+}
+
+#footer2 {
+    width: 60%;
+    padding-left: 7%;
+}
+
+#footer2 p {
+    padding-top: 15px;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.about {
+
 }
