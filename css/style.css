@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
@@ -155,6 +155,10 @@ li a:hover {
     .page {
         width: 50%;
     }
+
+    #foot-wrap {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1599px) {
@@ -168,6 +172,10 @@ li a:hover {
     .page {
         width: 60%;
     }
+
+    #foot-wrap {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
@@ -176,6 +184,10 @@ li a:hover {
         background-size: cover;
         height: 900px;
         /*background: url('../assets/white-gradient.png') no-repeat center;*/
+    }
+
+    #foot-wrap {
+        width: 60%;
     }
 }
 /*--------------------------*/
@@ -266,6 +278,10 @@ li a:hover {
     background: #fff;
 }
 
+.star {
+    color: indianred;
+}
+
 .btn-div {
     padding-top: 30px;
 }
@@ -288,42 +304,59 @@ li a:hover {
 /*--------------------------*/
 
 footer {
-    height: 200px;
-    background-color:  rgba(0, 0, 0, 0.80);
-    background: url("../assets/binding-dark.png") #333;
+    background-color: #333;
+    color: white;
 }
 
-footer ul {
-    margin-bottom: 0;
+footer a {
+    color: lightgray;
+    text-decoration: none;
 }
 
-#footer {
-    width: 60%;
+#foot-wrap {
     margin: 0 auto;
 }
 
-.footer{
-    float: left;
-    padding: 20px 20px;
-    color: #FFFFFF;
-    /*background-color: firebrick;*/
+#footer {
+    color: #C4C4C4;
+    display: inline;
+    line-height: 25px;
+}
+
+#footer ul {
+    margin-bottom: 10px;
+}
+
+#footer li {
+    padding-top: 0;
+}
+
+.footer {
+    margin-top: 10px;
+    padding: 20px;
 }
 
 #footer1 {
-    width: 25%;
+    /*background-color: gray;*/
+    width: 15%;
+    display: inline-block;
 }
 
 #footer2 {
-    width: 60%;
-    padding-left: 7%;
+    /*background-color: red;*/
+    width: 15%;
+    display: inline-block;
 }
 
-#footer2 p {
-    padding-top: 15px;
-}
-
-.footer h3 {
-    text-align: center;
+#footer3 {
+    width: 55%;
+    display: inline-block;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    vertical-align: top;
+    background: url("../assets/binding-dark.png") #1D1D1D;
 }
 
 .about {

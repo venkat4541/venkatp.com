@@ -182,8 +182,10 @@
                         <b>M.S. in Information Systems</b>
                     </div>
                 </div>
-                <li>Specialized in: Web development, UI/UX Design, Databases, Systems Analysis and Design.</li>
-                <li>Worked as: Graduate Assistant in the Department of Information Technology.</li>
+                <ul>
+                    <li>Specialized in: Web development, UI/UX Design, Databases, Systems Analysis and Design.</li>
+                    <li>Worked as: Graduate Assistant in the Department of Information Technology.</li>
+                </ul>
                 <ul>
                     <li>Demonstrate Graphic Design skills and techniques to instill an eye for creative design in students.</li>
                     <li>Instructor for IT213 web development and graphic design course using Adobe Creative Suite apps.</li>
@@ -204,7 +206,9 @@
                         <b>B.Tech. in Information Technology</b>
                     </div>
                 </div>
-                <li>Specialized in: Web/Multimedia Design, Databases, Object Oriented Programming, Computer Networks.</li>
+                <ul>
+                    <li>Specialized in: Web/Multimedia Design, Databases, Object Oriented Programming, Computer Networks.</li>
+                </ul>
             </div>
         </div>
 
@@ -226,12 +230,16 @@
                 <form action="">
                     <div>
                         <div style="float: right">
-                            <label for="message">Message:</label><br> <textarea name="message" id="message" cols="65" rows="6"></textarea>
+                            <label for="message">Message<span class="star">*</span></label><br>
+                                <textarea name="message" id="message" cols="65" rows="6" required></textarea>
                         </div>
                         <div>
-                            <label for="name">Name:<br></label> <input type="text" id="name" size="33"><br><br>
-                            <label for="email">Email:<br></label> <input type="email" id="email" size="33"><br><br>
-                            <label for="phone">Phone:<br></label> <input type="phone" id="phone" size="33"><br>
+                            <label for="name">Name<span class="star">*</span><br></label>
+                                <input type="text" id="name" size="33" required><br><br>
+                            <label for="email">Email<span class="star">*</span><br></label>
+                                <input type="email" id="email" size="33" required><br><br>
+                            <label for="phone">Phone<br></label>
+                                <input type="number" id="phone" size="33"><br>
                         </div>
                         <div>
                             <div style="float: right" class="btn-div">
@@ -247,30 +255,35 @@
         </div>
 
         <footer>
-            <div id="footer">
-                <div id="footer1" class="footer">
-                    <h3>Social</h3>
-                    <div style="float: right">
-                        <ul>
-                            <li>LinkedIn</li>
-                            <li>GitHub</li>
-                            <li>Facebook</li>
-                        </ul>
+            <div id="foot-wrap">
+                <div id="footer">
+                    <div id="footer1" class="footer">
+                        <h3>Links</h3>
+                        <div>
+                            <ul>
+                                <li><a href="mailto:vpolumah@gmu.edu" target="_blank">Email</a></li>
+                                <li><a href="https://github.com/venkat4541" target="_blank">GitHub</a></li>
+                                <li><a href="./resume.pdf" target="_blank">Resume</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <ul>
-                            <li>Email</li>
-                            <li>Twitter</li>
-                            <li>Website</li>
-                        </ul>
+                    <div id="footer2" class="footer">
+                        <h3>Social</h3>
+                        <div>
+                            <ul>
+                                <li><a href="https://linkedin.com/in/vpolumahanti" target="_blank">LinkedIn</a></li>
+                                <li><a href="https://twitter.com/la_maverick" target="_blank">Twitter</a></li>
+                                <li><a href="https://facebook.com/venkat4541" target="_blank">Facebook</a></li>
+                            </ul>
+                        </div>
                     </div>
-
-                </div>
-
-                <div id="footer2" class="footer">
-                    <h3>About me (on a lighter note)</h3>
-                    <div class="about">
-                        <p>I'm a Front End Developer with entry into Mobile development and Graphic design. I love gadgets and invest most of my time and money around them. </p>
+                    <div id="footer3" class="footer">
+                        <h3>About me (on a lighter note)</h3>
+                        <div class="about">
+                            <p>I'm a Front End Developer with entry into Mobile development and Graphic design.
+                                I love gadgets and invest most of my time and money around them. I play badminton,
+                                chess and ping pong.</p>
+                        </div>
                     </div>
                 </div>
             </div>
