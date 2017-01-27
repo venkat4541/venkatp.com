@@ -139,6 +139,21 @@ li a:hover {
     color: #ffffff;
 }
 
+.gray {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9em;
+}
+
+.darkgray {
+    color: #717171;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
+}
+
 /*--------------------------*/
 /*        WALLPAPER         */
 /*--------------------------*/
@@ -227,7 +242,6 @@ li a:hover {
 }
 
 .experience p, .education p{
-    float: right;
     padding-right: 13%;
 }
 
