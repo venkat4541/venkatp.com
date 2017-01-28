@@ -21,7 +21,7 @@ html, body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-bottom: 20px;
 }
 
@@ -40,7 +40,7 @@ ul {
 }
 
 li {
-    padding-top: 20px;
+    padding-top: 15px;
     list-style: none;
 }
 button {
@@ -105,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 /*-----------------------*/
 
 @media only screen and (min-width: 1600px) {
-    .wall {
+    #wall {
         background: url("../assets/drawing-pad-12097811_1920.jpg");
         background-size: cover;
         height: 1000px;
@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1599px) {
-    .wall {
+    #wall {
         background: url("../assets/drawing-pad-1209781_1280.jpg");
         background-size: cover;
         height: 900px;
@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 1279px) {
-    .wall {
+    #wall {
         background: url("../assets/drawing-pad-1209781_640.jpg");
         background-size: cover;
         height: 900px;
@@ -183,6 +183,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 999;
     background-color: rgba(0, 0, 0, 0.80);
     height: 75px;
     -webkit-transition: height 0.3s;
@@ -279,10 +280,50 @@ li a:hover {
 
 
 /*--------------------------*/
-/*        WALLPAPER         */
+/*           BIO            */
 /*--------------------------*/
 
+#bio {
+    width: 50%;
+    position: absolute;
+    top: 350px;
+    left: 325px;
+    text-align: justify;
+    line-height: 25px;
+    overflow: hidden;
+    max-height: 450px;
+}
 
+#bio img {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+#bio p {
+    font-family: 'Pompiere', cursive;
+    font-size: 1.3em;
+    line-height: 30px;
+    font-style: italic;
+}
+
+#bio h3 {
+    font-family: 'Pompiere', cursive;
+}
+
+#bio li {
+    font-size: 1.3em;
+    font-style: italic;
+    font-family: 'pompiere', cursive;
+}
+
+#bio span {
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'pompiere', cursive;
+    font-weight: bold;
+}
 
 /*--------------------------*/
 /*          SKILLS          */
@@ -318,6 +359,7 @@ li a:hover {
 
 .experience p, .education p{
     padding-right: 13%;
+    padding-top: 10px;
 }
 
 /*--------------------------*/
@@ -491,6 +533,10 @@ footer a {
     padding-bottom: 5px;
     margin-top: 30px;
     vertical-align: top;
+}
+
+.about {
+    font-size: 0.9em;
 }
 
 .copyright {
