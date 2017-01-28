@@ -51,23 +51,6 @@ table {
     line-height: 50px;
 }
 
-form {
-    border: solid 1px #f3f3f3;
-    border-radius: 3px;
-    padding: 20px;
-}
-
-input {
-    border: solid 1px white;
-    padding: 5px;
-    background-color: #f3f3f3;
-}
-
-textarea {
-    border: solid 1px white;
-    padding: 18px;
-    background-color: #f3f3f3;
-}
 
 .container {
     margin: 0 auto;
@@ -90,11 +73,14 @@ textarea {
     width: 40px;
     height: 40px;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 30px;
+    bottom: 30px;
     opacity: 0.9;
 }
 
+label {
+    font-size: 0.9em;
+}
 
 /*-----------------------*/
 /*        SCROLLBAR      */
@@ -111,7 +97,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #555;
     outline: 1px solid slategrey;
-    border-radius: 12px;
+    /*border-radius: 12px;*/
 }
 
 /*-----------------------*/
@@ -163,7 +149,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #footer3 {
-        width: 52%;
+        width: 50% !important;
     }
 }
 
@@ -339,11 +325,7 @@ li a:hover {
 /*--------------------------*/
 
 #education {
-    background: url("../assets/paper.png");
-}
-
-.education {
-    background: url("../assets/paper.png");
+    background: url("../assets/satinweave.png");
 }
 
 /*--------------------------*/
@@ -369,7 +351,8 @@ li a:hover {
 /*--------------------------*/
 
 #contact {
-    background: url("../assets/paper.png");
+    background: url("../assets/gray_jean.png");
+    padding: 100px 0;
     /*background-image:url('../assets/white-gradient.png');*/
     /*background-position:center center;*/
     /*background-repeat:no-repeat;*/
@@ -381,13 +364,45 @@ li a:hover {
     background: #fff;
 }
 
+.contact h1 {
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.contact p {
+    color: #5a5a5a;
+    font-size: 0.9em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .ta {
     float: right;
     width: 50%;
 }
 
+form {
+    padding: 20px;
+}
+
+input {
+    padding: 5px;
+    background-color: #fbfbfb;
+}
+
+input:focus {
+    background-color: #f5f5f5;
+}
+
 textarea {
+    /*border: solid 1px #f1f1f1;*/
     width: 90%;
+    padding: 15px;
+    background-color: #fbfbfb;
+}
+
+textarea:focus {
+    background-color: #f5f5f5;
 }
 
 .inputs {
@@ -403,10 +418,15 @@ textarea {
 }
 
 .send {
+    font-size: 0.9em;
     padding: 8px;
-    background-color: seagreen;
+    background-color: #dadada;
     border-radius: 3px;
     width: 20%;
+}
+
+.send:hover {
+    background-color: #999;
 }
 
 .red {
@@ -418,8 +438,10 @@ textarea {
 /*--------------------------*/
 
 footer {
-    background-color: #333;
+    background: url("../assets/binding-dark.png") black;
     color: white;
+    height: 200px;
+    border-top: 10px solid #383838;
 }
 
 footer a {
@@ -447,7 +469,7 @@ footer a {
 }
 
 .footer {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 20px;
 }
 
@@ -467,11 +489,16 @@ footer a {
     height: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 25px;
+    margin-top: 30px;
     vertical-align: top;
-    background: url("../assets/binding-dark.png") #1D1D1D;
 }
 
-.about {
-
+.copyright {
+    padding-top: 6px;
+    height: 20px;
+    background-color: rgb(194, 0, 35);
+    color: #000000;
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bold;
 }
