@@ -16,25 +16,15 @@ $(document).ready(function(){
         }
     });
 
-    window.addEventListener('scroll',function(e) {
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 300;
-
-        if(distanceY > shrinkOn) {
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 300) {
             $('header').addClass('minimize');
             $('#logo').addClass('logo-min');
-            $('.nav-item').addClass('nav-item-min');
+            $('li.nav-item').addClass('nav-item-min');
         } else {
-            if($('header').hasClass('minimize')) {
-                $('header').removeClass('minimize');
-            }
-            if($('#logo').hasClass('logo-min')) {
-                $('#logo').removeClass('logo-min');
-            }
-            if($('li').hasClass('nav-item-min')) {
-                $('li').removeClass('nav-item-min');
-            }
+            $('header').removeClass('minimize');
+            $('#logo').removeClass('logo-min');
+            $('li.nav-item').removeClass('nav-item-min');
         }
-
     });
 });
