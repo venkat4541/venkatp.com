@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <header id="top">
-            <div class="logo">
+            <div id="logo" class="logo">
                 <h2>Venkat Polumahanti</h2>
             </div>
             <nav>
@@ -38,16 +38,6 @@
         <div id="skills" class="wrap">
             <div class="skills page">
                 <h1>SKILLS</h1>
-                <!--<ul>-->
-                    <!--<li><b>Web</b>: HTML5, CSS3, JavaScript, AJAX, JSON, Servlets, JSP, Responsive Design.</li>-->
-                    <!--<li><b>Programming</b>: Java, C, PHP, MySQL, Unix, JCL, COBOL.</li>-->
-                    <!--<li><b>Frameworks/Libs</b>: jQuery, Bootstrap, AngularJS, Firebase, Cordova, ionic.</li>-->
-                    <!--<li><b>CMSs</b>: WordPress, Joomla, Drupal, phpBB, wooCommerce.</li>-->
-                    <!--<li><b>Web Tools</b>: GitHub, Grunt, Bower, Webpack, Cloud9, Slack, cPanel, Visual Studio, IntelliJ, Sublime Text.</li>-->
-                    <!--<li><b>UI/UX Tools</b>: Balsamiq Mockups, UXPin, Adobe Experience Manager.</li>-->
-                    <!--<li><b>Multimedia Tools</b>: Adobe Photoshop, Dreamweaver, Flash, Illustrator, Cinema4D, Sony Vegas, GIMP.</li>-->
-                    <!--<li><b>Miscellaneous</b>: MS Office, UML, Rational Rose, Eclipse, SEO.</li>-->
-                <!--</ul>-->
                 <table>
                     <tr>
                         <td width=15%">Web:</td>
@@ -230,25 +220,20 @@
                 <h1>CONTACT</h1>
                 <form action="">
                     <div>
-                        <div style="float: right">
+                        <div class="ta">
                             <label for="message">Message<span class="red">*</span></label><br>
-                                <textarea name="message" id="message" cols="65" rows="6" required></textarea>
+                                <textarea name="message" id="message" rows="7" required></textarea>
                         </div>
-                        <div>
+                        <div class="inputs">
                             <label for="name">Name<span class="red">*</span><br></label>
-                                <input type="text" id="name" size="33" required><br><br>
+                                <input type="text" id="name" required><br><br>
                             <label for="email">Email<span class="red">*</span><br></label>
-                                <input type="email" id="email" size="33" required><br><br>
+                                <input type="email" id="email" required><br><br>
                             <label for="tel">Phone<br></label>
-                                <input type="tel" id="tel" size="33"><br>
+                                <input type="tel" id="tel"><br>
                         </div>
-                        <div>
-                            <div style="float: right" class="btn-div">
-                                <button type="reset" class="res">Reset</button>
-                            </div>
-                            <div  class="btn-div submit">
-                                <button type="submit" class="send">Send</button>
-                            </div>
+                        <div class="btn-div submit">
+                            <button type="submit" class="send">Send</button>
                         </div>
                     </div>
                 </form>
@@ -311,23 +296,6 @@
     <!--    SCRIPTS     -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/animatedModal.min.js"></script>
-    <script>
-        $(".resume").animatedModal();
-
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>

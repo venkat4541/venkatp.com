@@ -10,28 +10,14 @@
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
-
-body::-webkit-scrollbar {
-    width: 0.7em;
-}
-
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #555;
-    outline: 1px solid slategrey;
-    border-radius: 12px;
-}
-
-/*  Top Level Elements  */
+/*------------------------*/
+/*   Top Level Elements   */
+/*------------------------*/
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /*font-size: 1.1em;*/
 }
 
 h1 {
@@ -109,100 +95,28 @@ textarea {
     opacity: 0.9;
 }
 
+
 /*-----------------------*/
-/*         HEADER        */
+/*        SCROLLBAR      */
 /*-----------------------*/
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.80);
-    height: 75px;
+body::-webkit-scrollbar {
+    width: 0.7em;
 }
 
-.minimize {
-    height: 40px; !important;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
-/*  Logo  */
-
-.logo h2 {
-    font-family: 'New Rocker', cursive;
-    font-size: 2em;
-    float: left;
-    margin: 20px 30px;
-    color: rgba(255, 255, 255, 0.75);
+body::-webkit-scrollbar-thumb {
+    background-color: #555;
+    outline: 1px solid slategrey;
+    border-radius: 12px;
 }
 
-/*  Nav Bar  */
-
-nav ul {
-    list-style: none !important;
-    float: right;
-    margin: 0 20px;
-}
-
-nav li {
-    display: inline;
-    float: left;
-}
-
-.nav-item {
-    padding: 29px 15px;
-}
-
-.nav-item a {
-    font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.75);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-li a:hover {
-    color: #ffffff;
-}
-
-.gray {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9em;
-}
-
-.darkgray {
-    color: #717171;
-    font-size: 0.9em;
-    padding-left: 10px;
-}
-
-.right {
-    float: right;
-}
-
-/*--------------------------*/
-/*           MODAL          */
-/*--------------------------*/
-
-embed {
-    height: 90vh;
-}
-
-#animatedModal {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.close-animatedModal{
-    text-align: right;
-    font-size: 2em;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 20px;
-    height: 3vh;
-}
-
-/*--------------------------*/
-/*        WALLPAPER         */
-/*--------------------------*/
-
+/*-----------------------*/
+/*      MEDIA QUERIES    */
+/*-----------------------*/
 
 @media only screen and (min-width: 1600px) {
     .wall {
@@ -226,7 +140,6 @@ embed {
         background: url("../assets/drawing-pad-1209781_1280.jpg");
         background-size: cover;
         height: 900px;
-        /*background: url('../assets/white-gradient.png') no-repeat center;*/
     }
 
     .page {
@@ -243,7 +156,6 @@ embed {
         background: url("../assets/drawing-pad-1209781_640.jpg");
         background-size: cover;
         height: 900px;
-        /*background: url('../assets/white-gradient.png') no-repeat center;*/
     }
 
     #foot-wrap {
@@ -254,6 +166,138 @@ embed {
         width: 52%;
     }
 }
+
+/*--------------------------*/
+/*     MODAL FOR RESUME     */
+/*--------------------------*/
+
+embed {
+    height: 90vh;
+}
+
+#animatedModal {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.close-animatedModal{
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    height: 3vh;
+}
+
+
+/*-----------------------*/
+/*         HEADER        */
+/*-----------------------*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+    height: 75px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.minimize {
+    height: 50px; !important;
+}
+
+/*  Logo  */
+
+.logo h2 {
+    font-family: 'New Rocker', cursive;
+    font-size: 2em;
+    float: left;
+    margin: 20px 30px;
+    color: rgba(255, 255, 255, 0.75);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.logo-min h2 {
+    font-size: 1.7em;
+    margin: 8px 30px;
+}
+
+/*  Nav Bar  */
+
+nav ul {
+    list-style: none !important;
+    float: right;
+    margin: 0 20px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+.nav-item {
+    padding: 29px 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.nav-item-min {
+    padding-top: 15px;
+}
+
+.nav-item a {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.nav-item-min a {
+    font-size: 0.8em;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+.gray {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9em;
+}
+
+.darkgray {
+    color: #717171;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
+}
+
+
+/*--------------------------*/
+/*        WALLPAPER         */
+/*--------------------------*/
+
+
+
 /*--------------------------*/
 /*          SKILLS          */
 /*--------------------------*/
@@ -270,10 +314,6 @@ embed {
 .skills li {
     list-style: none !important;
 }
-
-/*.skills li {*/
-    /*padding-bottom: 25px;*/
-/*}*/
 
 #skills h1 {
     color: #FFFFFF;
@@ -341,8 +381,21 @@ embed {
     background: #fff;
 }
 
-.red {
-    color: indianred;
+.ta {
+    float: right;
+    width: 50%;
+}
+
+textarea {
+    width: 90%;
+}
+
+.inputs {
+    width: 50%;
+}
+
+.inputs input {
+    width: 80%;
 }
 
 .btn-div {
@@ -353,14 +406,12 @@ embed {
     padding: 8px;
     background-color: seagreen;
     border-radius: 3px;
-    width: 250px;
+    width: 20%;
 }
 
-.res {
-    padding: 8px;
-    background-color: indianred;
-    border-radius: 3px;
-}
+.red {
+     color: indianred;
+ }
 
 /*--------------------------*/
 /*          FOOTER          */
@@ -401,13 +452,11 @@ footer a {
 }
 
 #footer1 {
-    /*background-color: gray;*/
     width: 15%;
     display: inline-block;
 }
 
 #footer2 {
-    /*background-color: red;*/
     width: 15%;
     display: inline-block;
 }
