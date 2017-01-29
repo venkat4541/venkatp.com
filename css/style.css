@@ -100,68 +100,6 @@ body::-webkit-scrollbar-thumb {
     /*border-radius: 12px;*/
 }
 
-/*-----------------------*/
-/*      MEDIA QUERIES    */
-/*-----------------------*/
-
-@media only screen and (min-width: 1600px) {
-    #wall {
-        background: url("../assets/drawing-pad-12097811_1920.jpg");
-        background-size: cover;
-        height: 1000px;
-        /*background: url('../assets/white-gradient.png') no-repeat center;*/
-    }
-
-    .page {
-        width: 50%;
-    }
-
-    #foot-wrap {
-        width: 50%;
-    }
-
-    #footer3 {
-        width: 54%;
-    }
-
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1599px) {
-    #wall {
-        background: url("../assets/drawing-pad-1209781_1280.jpg");
-        background-size: cover;
-        height: 900px;
-    }
-
-    .page {
-        width: 60%;
-    }
-
-    #foot-wrap {
-        width: 60%;
-    }
-
-    #footer3 {
-        width: 53%;
-    }
-}
-
-@media only screen and (max-width: 1279px) {
-    #wall {
-        background: url("../assets/drawing-pad-1209781_640.jpg");
-        background-size: cover;
-        height: 900px;
-    }
-
-    #foot-wrap {
-        width: 100%;
-    }
-
-    #footer3 {
-        width: 50% !important;
-    }
-}
-
 /*--------------------------*/
 /*     MODAL FOR RESUME     */
 /*--------------------------*/
@@ -240,7 +178,8 @@ nav li {
 }
 
 .nav-item {
-    padding: 29px 15px;
+    margin-top: 2px;
+    padding: 29px 10px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -295,12 +234,13 @@ li a:hover {
 #bio {
     width: 50%;
     position: absolute;
-    top: 350px;
-    left: 325px;
+    top: 29vh;
+    left: 21vw;
     text-align: justify;
     line-height: 25px;
     overflow: hidden;
-    max-height: 450px;
+    max-height: 500px;
+    padding: 5px;
 }
 
 #bio img {
@@ -555,4 +495,232 @@ footer a {
     font-size: 0.8em;
     text-align: center;
     font-weight: bold;
+}
+
+
+/*-----------------------*/
+/*      MEDIA QUERIES    */
+/*-----------------------*/
+
+@media only screen and (min-width: 1600px) {
+    #wall {
+        background: url("../assets/drawing-pad-12097811_1920.jpg");
+        background-size: cover;
+        height: 1000px;
+        /*background: url('../assets/white-gradient.png') no-repeat center;*/
+    }
+
+    .page {
+        width: 50%;
+    }
+
+    #foot-wrap {
+        width: 50%;
+    }
+
+    #footer3 {
+        width: 54%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+    #wall {
+        background: url("../assets/drawing-pad-1209781_1280.jpg");
+        background-size: cover;
+        height: 900px;
+    }
+
+    .page {
+        width: 60%;
+    }
+
+    #foot-wrap {
+        width: 60%;
+    }
+
+    #footer3 {
+        width: 53%;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1279px) {
+
+    #wall {
+        background: url("../assets/drawing-pad-1209781_1280.jpg");
+        background-size: cover;
+
+        background-position: top;
+        height: 900px;
+    }
+
+    #bio {
+        top: 250px;
+        left: 15vw;
+        width: 60%;
+    }
+
+    #foot-wrap {
+        width: 100%;
+    }
+
+    #footer3 {
+        width: 50%;
+    }
+
+    .nav-item {
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+
+    .nav-item {
+        margin-top: 0;
+    }
+
+    #wall {
+        background: url("../assets/drawing-pad-1209781_640.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 900px;
+    }
+
+    #bio {
+        top: 27vh;
+        left: 40px;
+        width: 85%;
+    }
+
+    #foot-wrap {
+        width: 100%;
+    }
+
+    #footer3 {
+        width: 50%;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .logo h2 {
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    .nav-item {
+        font-size: 0.8em;
+        padding: 19px 4px;
+    }
+
+}
+
+@media only screen and (max-width: 649px) {
+
+    body {
+        font-size: 0.9em;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .logo h2 {
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #wall {
+        background: url("../assets/drawing-pad-1209781_640.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+    }
+
+    #bio {
+        width: 85vw;
+        position: absolute;
+        top: 27vh;
+        left: 2vw;
+        text-align: justify;
+        line-height: 15px;
+        overflow: hidden;
+        max-height: 65vh;
+    }
+
+    #bio img {
+        height: 40px;
+        width: 40px;
+        float: left;
+    }
+
+    #bio p {
+        font-family: 'Pompiere', cursive;
+        font-size: 1.3em;
+        line-height: 25px;
+        font-style: italic;
+    }
+
+    #bio h3 {
+        font-family: 'Pompiere', cursive;
+    }
+
+    #bio li {
+        font-size: 1.3em;
+        font-style: italic;
+        font-family: 'pompiere', cursive;
+        line-height: 20px;
+    }
+
+    #bio span, #bio b {
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'pompiere', cursive;
+        font-weight: bold;
+    }
+
+    .page {
+        padding: 0;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .footer {
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+
+    #foot-wrap {
+        width: 100%;
+    }
+
+    #footer1, #footer2 {
+        width: 40%;
+        text-align: center;
+    }
+
+    #footer3 {
+        width: 93%;
+        margin: 0;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    #footer3 h3{
+        text-align: center;
+    }
 }
