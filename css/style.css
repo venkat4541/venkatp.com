@@ -119,6 +119,11 @@ body::-webkit-scrollbar-thumb {
     #foot-wrap {
         width: 50%;
     }
+
+    #footer3 {
+        width: 54%;
+    }
+
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1599px) {
@@ -135,6 +140,10 @@ body::-webkit-scrollbar-thumb {
     #foot-wrap {
         width: 60%;
     }
+
+    #footer3 {
+        width: 53%;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
@@ -145,7 +154,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     #foot-wrap {
-        width: 60%;
+        width: 100%;
     }
 
     #footer3 {
@@ -318,7 +327,7 @@ li a:hover {
     font-family: 'pompiere', cursive;
 }
 
-#bio span {
+#bio span, #bio b {
     font-size: 1em;
     font-style: italic;
     font-family: 'pompiere', cursive;
@@ -526,7 +535,6 @@ footer a {
 }
 
 #footer3 {
-    width: 55%;
     display: inline-block;
     height: 100%;
     padding-top: 5px;
