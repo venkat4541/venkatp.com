@@ -489,7 +489,7 @@ footer a {
 
 .copyright {
     padding-top: 6px;
-    height: 20px;
+    min-height: 20px;
     background-color: rgb(194, 0, 35);
     color: #000000;
     font-size: 0.8em;
@@ -643,6 +643,7 @@ footer a {
         background-size: cover;
         background-position: top;
         height: 100vh;
+        min-height: 500px;
     }
 
     #bio {
@@ -680,7 +681,14 @@ footer a {
         line-height: 20px;
     }
 
-    #bio span, #bio b {
+    #bio span {
+        font-size: 1em;
+        font-style: italic;
+        font-family: 'pompiere', cursive;
+        font-weight: bold;
+    }
+
+    #bio b {
         font-size: 1em;
         font-style: italic;
         font-family: 'pompiere', cursive;
@@ -701,7 +709,7 @@ footer a {
 
     .footer {
         margin-top: 0;
-        padding-bottom: 10px;
+        padding: 10px;
     }
 
     #foot-wrap {
