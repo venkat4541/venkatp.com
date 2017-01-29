@@ -264,7 +264,7 @@
             <div class="contact page">
                 <h1>CONTACT</h1>
                 <p>Feel free to contact me using the below form. I'll respond to you at the earliest.</p>
-                <form action="">
+                <form action="submit.php" method="post">
                     <div>
                         <div class="ta">
                             <label for="message">Message<span class="red">*</span></label><br>
@@ -272,11 +272,11 @@
                         </div>
                         <div class="inputs">
                             <label for="name">Name<span class="red">*</span><br></label>
-                                <input type="text" id="name" required><br><br>
+                                <input type="text" id="name" name="name" required><br><br>
                             <label for="email">Email<span class="red">*</span><br></label>
-                                <input type="email" id="email" required><br><br>
+                                <input type="email" id="email" name="email" required><br><br>
                             <label for="tel">Phone<br></label>
-                                <input type="tel" id="tel"><br>
+                                <input type="tel" id="tel" name="tel"><br>
                         </div>
                         <div class="btn-div submit">
                             <button type="submit" class="send">Send</button>
