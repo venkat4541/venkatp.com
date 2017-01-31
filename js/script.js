@@ -4,6 +4,7 @@
 
 $(".resume").animatedModal();
 
+// Jquery
 $(document).ready(function(){
 
     // Nav bar scroll animation
@@ -37,5 +38,22 @@ $(document).ready(function(){
         }, 600);
     });
 
+    // Responsive Nav bar
+    $('#icon').on('click', function() {
+        if($('#nav').hasClass('responsive')) {
+            $('#nav').removeClass('responsive');
+            $('#icon').html('&#9776;');
+        } else {
+            $('#nav').addClass('responsive');
+            $('#icon').text('X');
+        }
+    });
+
+    $('.switch').on('click', function () {
+        if($('#nav').hasClass('responsive')) {
+            $('#nav').removeClass('responsive');
+            $('#icon').html('&#9776;');
+        }
+    });
 
 });

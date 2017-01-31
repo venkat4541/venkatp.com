@@ -51,15 +51,22 @@ table {
     line-height: 50px;
 }
 
+label {
+    font-size: 0.9em;
+}
 
 .container {
     margin: 0 auto;
 }
 
+/*-----------------------*/
+/*    GENERIC CLASSES    */
+/*-----------------------*/
+
+
 .page {
     margin: 0 auto;
     padding: 30px;
-    /*height: 100vh;*/
 }
 
 .page li:before {
@@ -79,12 +86,23 @@ table {
     opacity: 0.9;
 }
 
-label {
+.switch {
+    cursor: pointer;
+}
+
+.gray {
+    color: rgba(255, 255, 255, 0.75);
     font-size: 0.9em;
 }
 
-.switch {
-    cursor: pointer;
+.darkgray {
+    color: #717171;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
 }
 
 /*-----------------------*/
@@ -164,12 +182,15 @@ header {
     margin: 8px 30px;
 }
 
-/*  Nav Bar  */
+/*-----------------------*/
+/*        NAV BAR        */
+/*-----------------------*/
 
 nav ul {
     list-style: none !important;
     float: right;
     margin: 0 20px;
+    overflow: hidden;
 }
 
 nav li {
@@ -197,6 +218,7 @@ nav li {
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    text-align: center;
 }
 
 .nav-item-min a {
@@ -207,19 +229,10 @@ li a:hover {
     color: #ffffff;
 }
 
-.gray {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9em;
-}
-
-.darkgray {
-    color: #717171;
-    font-size: 0.9em;
-    padding-left: 10px;
-}
-
-.right {
-    float: right;
+/* Do not display icon initially */
+.icon {
+    display: none;
+    cursor: pointer;
 }
 
 /*--------------------------*/
@@ -328,11 +341,6 @@ li a:hover {
 
 #contact {
     background: url("../assets/gray_jean.png");
-    /*background-image:url('../assets/white-gradient.png');*/
-    /*background-position:center center;*/
-    /*background-repeat:no-repeat;*/
-    /*background-attachment:scroll;*/
-    /*background-size:cover;*/
 }
 
 .contact {
@@ -619,9 +627,51 @@ footer a {
         font-size: 1.5em;
     }
 
-    nav {
+    /* RESPOONSIVE NAV BAR */
+    nav ul {
+        margin: 0;
+
+    }
+
+    nav li {
         display: none;
     }
+
+    .responsive {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 50px;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 10px 0;
+        -webkit-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .icon {
+        float: right;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        font-size: 1.5em;
+        color: #fff;
+    }
+
+    .responsive li {
+        float: none;
+        display: inline;
+    }
+
+    .responsive li a {
+        display: block;
+        text-align: center;
+        padding: 3px;
+
+    }
+    /* RESPOONSIVE NAV BAR ENDS*/
 
     #wall {
         background: url("../assets/photoshop-interface-1834294_640.jpg");
@@ -631,12 +681,16 @@ footer a {
 
     .bio {
         width: 90%;
-        top: 10%;
+        top: 15%;
         line-height: 20px;
     }
 
+    .wrap {
+        padding: 25px;
+    }
+
     .page {
-        padding: 0;
+        padding: 30px 0 0 0;
     }
 
     #contact {
