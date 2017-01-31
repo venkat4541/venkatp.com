@@ -40,6 +40,7 @@ $(document).ready(function(){
 
     // Responsive Nav bar
     $('#icon').on('click', function() {
+        //noinspection JSJQueryEfficiency
         if($('#nav').hasClass('responsive')) {
             $('#nav').removeClass('responsive');
             $('#icon').html('&#9776;');
@@ -50,6 +51,7 @@ $(document).ready(function(){
     });
 
     $('.switch').on('click', function () {
+        //noinspection JSJQueryEfficiency
         if($('#nav').hasClass('responsive')) {
             $('#nav').removeClass('responsive');
             $('#icon').html('&#9776;');
