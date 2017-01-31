@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Venkat Polumahanti</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--suppress CssUnknownTarget -->
     <style>
         @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
         @import url('https://fonts.googleapis.com/css?family=New+Rocker|Passero+One');
@@ -14,17 +15,17 @@
 </head>
 <body>
     <div class="container">
-        <header id="top">
+        <header>
             <div id="logo" class="logo">
                 <h2>Venkat Polumahanti</h2>
             </div>
             <nav>
                 <ul>
-                    <li class="nav-item"><a href="#skills">SKILLS</a></li>
-                    <li class="nav-item"><a href="#experience">EXPERIENCE</a></li>
-                    <li class="nav-item"><a href="#education">EDUCATION</a></li>
-                    <li class="nav-item"><a href="#projects">PROJECTS</a></li>
-                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                    <li class="nav-item"><a id="ski" class="switch">SKILLS</a></li>
+                    <li class="nav-item"><a id="exp" class="switch">EXPERIENCE</a></li>
+                    <li class="nav-item"><a id="edu" class="switch">EDUCATION</a></li>
+                    <li class="nav-item"><a id="pro" class="switch">PROJECTS</a></li>
+                    <li class="nav-item"><a id="con" class="switch">CONTACT</a></li>
                     <li class="nav-item"><a class="resume" href="#animatedModal">RESUME</a></li>
                 </ul>
             </nav>
@@ -35,30 +36,32 @@
         </div>
 
         <div id="bio">
-            <!--<img src="assets/venkat.jpg" alt="">-->
-            <ul>
-                <li><span>Title: </span>Front End Developer</li>
-                <li><span>Roles interested:</span> Front End Developer, Web Developer, Web Designer,
-                    Software Developer.</li>
-                <li><span>Key skills:</span> HTML, CSS, JavaScript, Jquery, AngularJS, Bootstrap.</li>
-                <li><span>Experience:</span> ~4 years</li>
-            </ul>
-            <p>
-                Hi, I'm Venkat, a Software Developer by profession, somewhere between Front-End and
-                Full Stack developer. I have a Master's degree in Information Systems from
-                George Mason University. My core interests after web development include UI/UX design,
-                graphic design, mobile development. Photography is my hobby. I have worked for nearly
-                4 years both in startups and well-established companies. Having graduated recently,
-                <b>I'm in search of an opportunity matching my skills and experience.</b>
-            </p>
-            <br>
-            <p class="thanks">
-                Thanks for visiting my page. I'd love to connect with you on the social media. Or
-                leave me a message using the contact form below, it means a lot to me.
-            </p>
+
+            <div class="bio">
+                <!--<center>-->
+                    <!--<figure>-->
+                        <!--<img src="assets/venkat.jpg" alt="">-->
+                        <!--<figcaption>Venkat Polumahanti</figcaption>-->
+                    <!--</figure>-->
+                <!--</center>-->
+
+                <p>
+                    Hi, I'm Venkat, a Software Developer by profession, somewhere between Front-End and
+                    Full Stack developer. I have a Master's degree in Information Systems from
+                    George Mason University. My core interests after web development include UI/UX design,
+                    graphic design, mobile development. Photography is my hobby. I have worked for nearly
+                    4 years both in startups and well-established companies. Having graduated recently,
+                    <b>I'm in search of an opportunity matching my skills and experience.</b>
+                </p>
+                <br>
+                <p>
+                    Thanks for visiting my page. I'd love to connect with you on the social media. Or
+                    leave me a message using the contact form below, it means a lot to me.
+                </p>
+            </div>
         </div>
 
-        <div>
+        <div id="skills" class="wrap">
             <div class="skills page">
                 <h1>SKILLS</h1>
                 <table>
@@ -329,7 +332,9 @@
     </div>
 
     <!-- Go to top button-->
-    <a href="#wall"><img src="assets/upred.png" alt="Top" class="top-btn"></a>
+    <!--<img src="assets/upred.png" alt="Top" id="top-btn" class="top-btn" onclick="topbtn();">-->
+    <!--<img src="assets/upred.png" alt="Top" id="top-btn" class="top-btn">-->
+    <a class="switch" id="top"><img src="assets/upred.png" alt="Top" class="topbtn"></a>
 
     <!--MODAL-->
     <div id="animatedModal">

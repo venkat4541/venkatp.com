@@ -1,21 +1,12 @@
 /**
  * Created by Venkat on 1/10/2017.
  */
+
 $(".resume").animatedModal();
 
 $(document).ready(function(){
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        }
-    });
 
+    // Nav bar scroll animation
     $(window).scroll(function() {
         if ($(document).scrollTop() > 300) {
             $('header').addClass('minimize');
@@ -27,4 +18,24 @@ $(document).ready(function(){
             $('li.nav-item').removeClass('nav-item-min');
         }
     });
+
+    // Smooth scrolling
+    $('a.switch').on('click',function(event) {
+        var fn = event.currentTarget.id;
+        var hash = "dummy";
+        switch(fn) {
+            case "ski": hash = "skills"; break;
+            case "exp": hash = "experience"; break;
+            case "edu": hash = "education"; break;
+            case "pro": hash = "projects"; break;
+            case "con": hash = "contact"; break;
+            case "top": hash = "wall"; break;
+            default: hash = "wall"; break;
+        }
+        $('body').animate({
+            scrollTop: $('#'+hash).offset().top
+        }, 600);
+    });
+
+
 });

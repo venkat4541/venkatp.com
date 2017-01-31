@@ -65,11 +65,12 @@ table {
 .page li:before {
     content: '> ';
 }
+
 .wrap {
     padding: 50px 30px;
 }
 
-.top-btn {
+.topbtn {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -80,6 +81,10 @@ table {
 
 label {
     font-size: 0.9em;
+}
+
+.switch {
+    cursor: pointer;
 }
 
 /*-----------------------*/
@@ -97,7 +102,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #555;
     outline: 1px solid slategrey;
-    /*border-radius: 12px;*/
 }
 
 /*--------------------------*/
@@ -134,9 +138,7 @@ header {
     background-color: rgba(0, 0, 0, 0.80);
     height: 75px;
     -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
     transition: height 0.3s;
 }
 
@@ -151,11 +153,9 @@ header {
     font-size: 2em;
     float: left;
     margin: 20px 30px;
-    color: rgba(255, 255, 255, 0.75);
+    color: #d4d4d4;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -181,9 +181,7 @@ nav li {
     margin-top: 2px;
     padding: 29px 10px;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -197,9 +195,7 @@ nav li {
     text-decoration: none;
     font-weight: bold;
     -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -226,52 +222,41 @@ li a:hover {
     float: right;
 }
 
+/*--------------------------*/
+/*           WALL           */
+/*--------------------------*/
+
+#wall {
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
 
 /*--------------------------*/
 /*           BIO            */
 /*--------------------------*/
 
 #bio {
-    width: 50%;
+    height: 100vh;
     position: absolute;
-    top: 29vh;
-    left: 21vw;
-    text-align: justify;
-    line-height: 25px;
+    top: 0;
+    left: 0;
+    background: url("../assets/dark-matter.png") rgba(0, 0, 0, 0.5);
+    color: #e3e3e3;
     overflow: hidden;
-    max-height: 500px;
-    padding: 5px;
 }
 
-#bio img {
-    height: 150px;
-    width: 150px;
-    float: left;
-    margin-right: 20px;
-}
-
-#bio p {
-    font-family: 'Pompiere', cursive;
-    font-size: 1.3em;
+.bio {
+    width: 70%;
+    position: relative;
+    top: 15%;
+    margin: 0 auto;
+    text-align: justify;
     line-height: 30px;
-    font-style: italic;
 }
 
-#bio h3 {
-    font-family: 'Pompiere', cursive;
-}
-
-#bio li {
-    font-size: 1.3em;
-    font-style: italic;
-    font-family: 'pompiere', cursive;
-}
-
-#bio span, #bio b {
-    font-size: 1em;
-    font-style: italic;
-    font-family: 'pompiere', cursive;
-    font-weight: bold;
+#bio ul {
+    margin-bottom: 10px;
 }
 
 /*--------------------------*/
@@ -343,7 +328,6 @@ li a:hover {
 
 #contact {
     background: url("../assets/gray_jean.png");
-    padding: 100px 0;
     /*background-image:url('../assets/white-gradient.png');*/
     /*background-position:center center;*/
     /*background-repeat:no-repeat;*/
@@ -504,10 +488,14 @@ footer a {
 
 @media only screen and (min-width: 1600px) {
     #wall {
-        background: url("../assets/drawing-pad-12097811_1920.jpg");
+        background: url("../assets/photoshop-interface-1834294_1920.jpg");
         background-size: cover;
-        height: 1000px;
-        /*background: url('../assets/white-gradient.png') no-repeat center;*/
+        background-position: top;
+    }
+
+    .bio {
+        width: 50%;
+        line-height: 30px;
     }
 
     .page {
@@ -526,9 +514,13 @@ footer a {
 
 @media only screen and (min-width: 1280px) and (max-width: 1599px) {
     #wall {
-        background: url("../assets/drawing-pad-1209781_1280.jpg");
+        background: url("../assets/photoshop-interface-1834294_1920.jpg");
         background-size: cover;
-        height: 900px;
+        background-position: top;
+    }
+
+    .bio {
+        width: 50%;
     }
 
     .page {
@@ -547,17 +539,13 @@ footer a {
 @media only screen and (min-width: 850px) and (max-width: 1279px) {
 
     #wall {
-        background: url("../assets/drawing-pad-1209781_1280.jpg");
+        background: url("../assets/photoshop-interface-1834294_1280.jpg");
         background-size: cover;
-
         background-position: top;
-        height: 900px;
     }
 
-    #bio {
-        top: 250px;
-        left: 15vw;
-        width: 60%;
+    .bio {
+        width: 50%;
     }
 
     #foot-wrap {
@@ -581,16 +569,13 @@ footer a {
     }
 
     #wall {
-        background: url("../assets/drawing-pad-1209781_640.jpg");
+        background: url("../assets/photoshop-interface-1834294_640.jpg");
         background-size: cover;
         background-position: top;
-        height: 900px;
     }
 
-    #bio {
-        top: 27vh;
-        left: 40px;
-        width: 85%;
+    #contact {
+        padding: 0;
     }
 
     #foot-wrap {
@@ -639,63 +624,22 @@ footer a {
     }
 
     #wall {
-        background: url("../assets/drawing-pad-1209781_640.jpg");
+        background: url("../assets/photoshop-interface-1834294_640.jpg");
         background-size: cover;
         background-position: top;
-        height: 100vh;
-        min-height: 500px;
     }
 
-    #bio {
-        width: 85vw;
-        position: absolute;
-        top: 27vh;
-        left: 2vw;
-        text-align: justify;
-        line-height: 15px;
-        overflow: hidden;
-        max-height: 65vh;
-    }
-
-    #bio img {
-        height: 40px;
-        width: 40px;
-        float: left;
-    }
-
-    #bio p {
-        font-family: 'Pompiere', cursive;
-        font-size: 1.3em;
-        line-height: 25px;
-        font-style: italic;
-    }
-
-    #bio h3 {
-        font-family: 'Pompiere', cursive;
-    }
-
-    #bio li {
-        font-size: 1.3em;
-        font-style: italic;
-        font-family: 'pompiere', cursive;
+    .bio {
+        width: 90%;
+        top: 10%;
         line-height: 20px;
     }
 
-    #bio span {
-        font-size: 1em;
-        font-style: italic;
-        font-family: 'pompiere', cursive;
-        font-weight: bold;
-    }
-
-    #bio b {
-        font-size: 1em;
-        font-style: italic;
-        font-family: 'pompiere', cursive;
-        font-weight: bold;
-    }
-
     .page {
+        padding: 0;
+    }
+
+    #contact {
         padding: 0;
     }
 
