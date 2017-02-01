@@ -131,7 +131,7 @@ embed {
 }
 
 #animatedModal {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
 }
 
 .close-animatedModal{
@@ -153,7 +153,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.80);
+    background: rgba(0, 0, 0, 0.80);
     height: 75px;
     -webkit-transition: height 0.3s;
     -ms-transition: height 0.3s;
@@ -278,19 +278,11 @@ li a:hover {
 
 #skills {
     background: rgba(61, 69, 87, 1);;
-}
-
-.skills {
-    background-color: rgba(61, 69, 87, 1);
     color: white;
 }
 
 .skills li {
     list-style: none !important;
-}
-
-#skills h1 {
-    color: #FFFFFF;
 }
 
 .tb-right {
@@ -314,7 +306,7 @@ li a:hover {
 /*--------------------------*/
 
 #education {
-    background: url("../assets/satinweave.png");
+    background: url("../assets/gray_jean.png");
 }
 
 /*--------------------------*/
@@ -322,12 +314,11 @@ li a:hover {
 /*--------------------------*/
 
 #projects {
-    background-color: rgba(61, 69, 87, 1);
+    background: rgba(61, 69, 87, 1);
+    color: white;
 }
 
 .projects {
-    background-color: rgba(61, 69, 87, 1);
-    color: white;
     line-height: 30px;
 }
 
@@ -340,11 +331,12 @@ li a:hover {
 /*--------------------------*/
 
 #contact {
-    background: url("../assets/gray_jean.png");
+    background: #fff;
 }
 
 .contact {
-    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 3px;
 }
 
 .contact h1 {
@@ -370,22 +362,22 @@ form {
 
 input {
     padding: 5px;
-    background-color: #fbfbfb;
+    background: #fbfbfb;
 }
 
 input:focus {
-    background-color: #f5f5f5;
+    background: #f5f5f5;
 }
 
 textarea {
     /*border: solid 1px #f1f1f1;*/
     width: 90%;
     padding: 15px;
-    background-color: #fbfbfb;
+    background: #fbfbfb;
 }
 
 textarea:focus {
-    background-color: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .inputs {
@@ -403,13 +395,13 @@ textarea:focus {
 .send {
     font-size: 0.9em;
     padding: 8px;
-    background-color: #dadada;
+    background: #dadada;
     border-radius: 3px;
     width: 20%;
 }
 
 .send:hover {
-    background-color: #999;
+    background: #999;
 }
 
 .red {
@@ -482,7 +474,7 @@ footer a {
 .copyright {
     padding-top: 6px;
     min-height: 20px;
-    background-color: rgb(194, 0, 35);
+    background: rgb(194, 0, 35);
     color: #000000;
     font-size: 0.8em;
     text-align: center;
