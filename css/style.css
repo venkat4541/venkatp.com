@@ -6,7 +6,6 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    text-align: justify;
     background: transparent;
     font-family: 'Quattrocento Sans', sans-serif;
 }
@@ -42,7 +41,8 @@ ul {
 
 li {
     padding-top: 15px;
-    list-style: none;
+    /*list-style: none;*/
+    line-height: 25px;
 }
 button {
     cursor: pointer;
@@ -76,10 +76,6 @@ label {
     padding: 30px;
 }
 
-.page li:before {
-    content: '> ';
-}
-
 .wrap {
     padding: 50px 30px;
 }
@@ -110,6 +106,14 @@ label {
 
 .right {
     float: right;
+}
+
+.education, .experience {
+    text-align: justify;
+}
+
+.heads {
+    max-width: 50%;
 }
 
 /*-----------------------*/
@@ -216,7 +220,6 @@ nav li {
 }
 
 .nav-item {
-    margin-top: 2px;
     padding: 28px 10px;
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -239,7 +242,7 @@ nav li {
 }
 
 .nav-item-min a {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 li a:hover {
@@ -314,8 +317,7 @@ li a:hover {
 }
 
 .experience p, .education p{
-    padding-right: 13%;
-    padding-top: 10px;
+    /*padding-top: 2px;*/
 }
 
 /*--------------------------*/
@@ -484,6 +486,7 @@ footer a {
 
 #footer li {
     padding-top: 0;
+    list-style: none;
 }
 
 .footer {
@@ -626,12 +629,12 @@ footer a {
     .logo h2 {
         margin-top: 12px;
         margin-left: 10px;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .nav-item {
         font-size: 0.7em;
-        padding: 19px 6px;
+        padding: 14px 6px;
     }
 
     .nav-item {
@@ -642,6 +645,10 @@ footer a {
         background: url("../assets/photoshop-interface-1834294_640.jpg");
         background-size: cover;
         background-position: top;
+    }
+
+    #certs table, #certs td, #certs th {
+        line-height: 25px;
     }
 
     #contact {
@@ -744,6 +751,10 @@ footer a {
         padding: 30px 0 0 0;
     }
 
+    #certs table, #certs td, #certs th {
+        line-height: 25px;
+    }
+
     #contact {
         padding: 0;
     }
@@ -784,4 +795,8 @@ footer a {
     .modal-content img {
         width: 100%;
     }
+}
+
+.page ul {
+    padding-left: 18px;
 }
