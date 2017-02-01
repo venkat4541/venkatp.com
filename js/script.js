@@ -29,6 +29,7 @@ $(document).ready(function(){
             case "exp": hash = "experience"; break;
             case "edu": hash = "education"; break;
             case "pro": hash = "projects"; break;
+            case "cer": hash = "certs"; break;
             case "con": hash = "contact"; break;
             case "top": hash = "wall"; break;
             default: hash = "wall"; break;
