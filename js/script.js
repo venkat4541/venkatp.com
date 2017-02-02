@@ -20,23 +20,17 @@ $(document).ready(function(){
         }
     });
 
-    // Smooth scrolling
-    $('a.switch').on('click',function(event) {
-        var fn = event.currentTarget.id;
-        var hash = "dummy";
-        switch(fn) {
-            case "ski": hash = "skills"; break;
-            case "exp": hash = "experience"; break;
-            case "edu": hash = "education"; break;
-            case "pro": hash = "projects"; break;
-            case "cer": hash = "certs"; break;
-            case "con": hash = "contact"; break;
-            case "top": hash = "wall"; break;
-            default: hash = "wall"; break;
+
+    $(document).on('click', 'a[href^="#"]', function (e) {
+        // target element id
+        var id = $(this).attr('href');
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
         }
-        $('body').animate({
-            scrollTop: $('#'+hash).offset().top
-        }, 600);
+        e.preventDefault();
+        var pos = $(id).offset().top - 50;
+        $('body, html').animate({scrollTop: pos});
     });
 
     // Responsive Nav bar
@@ -51,6 +45,7 @@ $(document).ready(function(){
         }
     });
 
+    // Responsive nav icon show and hide
     $('.switch').on('click', function () {
         //noinspection JSJQueryEfficiency
         if($('#nav').hasClass('responsive')) {
