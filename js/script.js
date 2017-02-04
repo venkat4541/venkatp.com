@@ -20,13 +20,17 @@ $(document).ready(function(){
         }
     });
 
-
+    // Smooth scrolling
     $(document).on('click', 'a[href^="#"]', function (e) {
         // target element id
         var id = $(this).attr('href');
         var $id = $(id);
         if ($id.length === 0) {
             return;
+        }
+        if($('#nav').hasClass('responsive')) {
+            $('#nav').removeClass('responsive');
+            $('#icon').html('&#9776;');
         }
         e.preventDefault();
         var pos = $(id).offset().top - 50;
