@@ -292,6 +292,15 @@ li a:hover {
     margin-bottom: 10px;
 }
 
+#bio a{
+    color: white;
+    text-decoration: none;
+}
+
+.text-anim {
+    text-align: center;
+}
+
 #anim {
     display: none;
 }
