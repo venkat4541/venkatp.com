@@ -196,6 +196,19 @@ header {
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
+    animation: blur 9s infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes blur {
+    0%, 100% {
+        color: #d4d4d4;
+        text-shadow: none;
+    }
+    50% {
+        color: transparent;
+        text-shadow: 0 0 2px white, 0 0 2px white;
+    }
 }
 
 .logo-min h2 {
