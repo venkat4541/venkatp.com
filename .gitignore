@@ -76,3 +76,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/webstorm,windows
+nav.html
+test.html
+error_log
+anim.html
+assets/animatedModal.js-master.zip

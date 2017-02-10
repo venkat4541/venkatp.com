@@ -295,8 +295,10 @@ li a:hover {
 .bio {
     width: 70%;
     position: relative;
-    top: 15%;
+    /*top: 15%;*/
     margin: 0 auto;
+    margin-top: -135px;
+    top: 50%;
     text-align: justify;
     line-height: 30px;
 }
@@ -765,7 +767,8 @@ footer a {
 
     .bio {
         width: 90%;
-        top: 15%;
+        /*top: 15%;*/
+        top: 50%;
         line-height: 20px;
     }
 
