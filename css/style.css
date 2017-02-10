@@ -196,19 +196,6 @@ header {
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
-    animation: blur 9s infinite;
-    animation-timing-function: ease-out;
-}
-
-@keyframes blur {
-    0%, 100% {
-        color: #d4d4d4;
-        text-shadow: none;
-    }
-    50% {
-        color: transparent;
-        text-shadow: 0 0 2px white, 0 0 2px white;
-    }
 }
 
 .logo-min h2 {
@@ -295,7 +282,6 @@ li a:hover {
 .bio {
     width: 70%;
     position: relative;
-    /*top: 15%;*/
     margin: 0 auto;
     margin-top: -135px;
     top: 50%;
@@ -314,10 +300,6 @@ li a:hover {
 
 .text-anim {
     text-align: center;
-}
-
-#anim {
-    display: none;
 }
 
 /*--------------------------*/
@@ -767,8 +749,7 @@ footer a {
 
     .bio {
         width: 90%;
-        /*top: 15%;*/
-        top: 50%;
+        top: 40%;
         line-height: 20px;
     }
 
