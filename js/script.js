@@ -7,7 +7,7 @@ $(".resume").animatedModal();
 // Jquery
 $(document).ready(function(){
 
-    // Nav bar scroll animation
+    // Nav bar min-max animation
     $(window).scroll(function() {
         if ($(document).scrollTop() > 300) {
             $('header').addClass('minimize');
@@ -59,7 +59,6 @@ $(document).ready(function(){
     });
 
 });
-
 
 
 // Animated Text
