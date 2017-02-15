@@ -175,9 +175,9 @@ header {
     z-index: 999;
     background: rgba(0, 0, 0, 0.80);
     height: 75px;
-    -webkit-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    transition: height 0.3s;
+    -webkit-transition: height 0.3s ease-in-out;
+    -ms-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
 }
 
 .minimize {
@@ -193,9 +193,9 @@ header {
     margin: 20px;
     margin-right: 5px;
     color: #d4d4d4;
-    -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo-min h2 {
@@ -221,9 +221,9 @@ nav li {
 
 .nav-item {
     padding: 26px 10px;
-    -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-item-min {
@@ -235,9 +235,9 @@ nav li {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     font-weight: bold;
-    -webkit-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
@@ -295,7 +295,11 @@ li a:hover {
 
 #bio a{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+#bio p a {
+  text-decoration: underline;
 }
 
 .text-anim {
@@ -712,9 +716,9 @@ footer a {
         top: 50px;
         background: rgba(0, 0, 0, 0.85);
         padding: 10px 0;
-        -webkit-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        transition: all 0.3s;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .icon {
