@@ -306,6 +306,10 @@ li a:hover {
     text-align: center;
 }
 
+.text-anim h2 {
+  margin-bottom: 20px;
+}
+
 /*--------------------------*/
 /*          SKILLS          */
 /*--------------------------*/
