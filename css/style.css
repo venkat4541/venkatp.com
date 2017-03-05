@@ -182,6 +182,9 @@ header {
 
 .minimize {
     height: 50px; !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /*  Logo  */
@@ -229,7 +232,8 @@ nav li {
 
 .nav-item-min {
     padding-top: 0;
-    line-height: 50px
+    line-height: 50px;
+    
 }
 
 .nav-item a {
@@ -654,7 +658,8 @@ footer a {
 
     .nav-item {
         font-size: 0.7em;
-        padding: 14px 6px;
+        padding: 0 6px;
+        line-height: 50px;
     }
 
     .nav-item {
@@ -713,6 +718,10 @@ footer a {
 
     nav li {
         display: none;
+    }
+
+    .nav-item {
+      line-height: 25px;
     }
 
     .responsive {
