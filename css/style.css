@@ -220,14 +220,16 @@ nav li {
 }
 
 .nav-item {
-    padding: 26px 10px;
+    padding: 0 10px;
+    line-height: 75px;
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .nav-item-min {
-    padding-top: 15px;
+    padding-top: 0;
+    line-height: 50px
 }
 
 .nav-item a {
