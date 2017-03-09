@@ -66,6 +66,17 @@ label {
     margin: 0 auto;
 }
 
+.preload {
+  background: url("../assets/preload.gif") rgba(0, 0, 0, 1) no-repeat center;
+  background-clip: padding-box;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /*-----------------------*/
 /*    GENERIC CLASSES    */
 /*-----------------------*/

@@ -7,6 +7,11 @@ $(".resume").animatedModal();
 // Jquery
 $(document).ready(function(){
 
+    setTimeout(function(){
+       $('.preload').fadeOut('slow', function () {
+             });
+         },2000);
+
     // Nav bar min-max animation
     $(window).scroll(function() {
         if ($(document).scrollTop() > 300) {
@@ -34,7 +39,7 @@ $(document).ready(function(){
         }
         e.preventDefault();
         var pos = $(id).offset().top - 50;
-        $('body, html').animate({scrollTop: pos});
+        $('body, html').animate({scrollTop: pos}, "slow");
     });
 
     // Responsive Nav bar
