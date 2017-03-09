@@ -10,7 +10,7 @@ $(document).ready(function(){
     setTimeout(function(){
        $('.preload').fadeOut('slow', function () {
              });
-         },2000);
+         },1000);
 
     // Nav bar min-max animation
     $(window).scroll(function() {
@@ -38,7 +38,7 @@ $(document).ready(function(){
             $('#icon').html('&#9776;');
         }
         e.preventDefault();
-        var pos = $(id).offset().top - 50;
+        var pos = $(id).offset().top - 40;
         $('body, html').animate({scrollTop: pos}, "slow");
     });
 
