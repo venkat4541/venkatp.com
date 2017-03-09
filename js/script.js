@@ -7,10 +7,10 @@ $(".resume").animatedModal();
 // Jquery
 $(document).ready(function(){
 
-    setTimeout(function(){
-       $('.preload').fadeOut('slow', function () {
-             });
-         },1000);
+    // setTimeout(function(){
+    //    $('.preload').fadeOut('slow', function () {
+    //          });
+    //      },1000);
 
     // Nav bar min-max animation
     $(window).scroll(function() {
