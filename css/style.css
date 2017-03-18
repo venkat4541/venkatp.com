@@ -1,12 +1,7 @@
 /*  Reset  */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%;
+    vertical-align: baseline; background: transparent;
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
@@ -14,68 +9,17 @@
 /*   Top Level Elements   */
 /*------------------------*/
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-bottom: 50px;
-}
-
-li {
-    padding-top: 15px;
-    /*list-style: none;*/
-    line-height: 25px;
-}
-button {
-    cursor: pointer;
-}
-
-table {
-    line-height: 50px;
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th {
-    text-align: center;
-}
-
-label {
-    font-size: 0.9em;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-/*.preload {
-  background: url("../assets/preload.gif") rgba(0, 0, 0, 1) no-repeat center;
-  background-clip: padding-box;
-  z-index: 9999;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-}*/
+html, body { height: 100%; margin: 0; padding: 0; }
+h1 { font-size: 1.6em; margin-bottom: 20px; }
+h2 { font-size: 1.3em;  margin-bottom: 10px; }
+h3 {  font-size: 1.1em;  margin-bottom: 10px; }
+ul {  margin-bottom: 50px; }
+li {  padding-top: 15px;  line-height: 25px; }
+button { cursor: pointer; }
+table {  line-height: 50px;  width: 100%;  border-collapse: collapse; }
+th { text-align: center; }
+label { font-size: 0.9em; }
+.container { margin: 0 auto; }
 
 /*-----------------------*/
 /*    GENERIC CLASSES    */
@@ -184,7 +128,6 @@ header {
     width: 100%;
     top: 0;
     z-index: 999;
-    background: rgba(0, 0, 0, 0.80);
     height: 75px;
     -webkit-transition: height 0.3s ease-in-out;
     -ms-transition: height 0.3s ease-in-out;
@@ -192,6 +135,7 @@ header {
 }
 
 .minimize {
+    background: rgba(0, 0, 0, 0.7);
     height: 50px; !important;
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -206,7 +150,7 @@ header {
     float: left;
     margin: 20px;
     margin-right: 5px;
-    color: #d4d4d4;
+    color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -248,7 +192,7 @@ nav li {
 
 .nav-item a {
     font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     -webkit-transition: all 0.3s ease-in-out;
@@ -261,8 +205,25 @@ nav li {
     font-size: 0.9em;
 }
 
-li a:hover {
-    color: #ffffff;
+nav li a:hover {
+    color: #F5D76E;
+    border-bottom: 1px dotted;
+    border-top: 1px dotted;
+    padding: 7px 0;
+}
+
+a.portfolio {
+  background: #FFC107;
+  color: #333;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+a.portfolio:hover {
+    padding: 4px;
+    color: black;
+    background: #FF5722;
+    border: none;
 }
 
 /* Do not display icon initially */
@@ -279,6 +240,7 @@ li a:hover {
     background-size: cover;
     background-position: top;
     height: 100vh;
+    overflow: hidden;
 }
 
 /*--------------------------*/
@@ -290,7 +252,8 @@ li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../assets/dark-matter.png") rgba(0, 0, 0, 0.5);
+    /*background: url("../assets/dark-matter.png") rgba(0, 0, 0, 0.35);*/
+    background: rgba(0, 0, 0, 0.45);
     color: #e3e3e3;
     overflow: hidden;
 }
@@ -721,59 +684,30 @@ footer a {
     }
 
     /* RESPONSIVE NAV BAR */
-    nav ul {
-        margin: 0;
 
+    nav ul { margin: 0; }
+    nav li {  display: none; }
+    .nav-item { line-height: 25px; }
+    .responsive { width: 100vw;  height: 100vh;  position: absolute;  top: 50px;
+      background: rgba(0, 0, 0, 0.85);  padding: 10px 0;  -webkit-transition: all 0.3s ease-in-out;  -ms-transition: all 0.3s ease-in-out;  transition: all 0.5s ease-in-out;
     }
-
-    nav li {
-        display: none;
+    .icon { float: right;  display: inline-block;  position: absolute;  right: 0;
+      top: 0;  padding: 10px;  font-size: 1.5em;  color: #fff;
     }
+    .responsive li {  float: none;  display: inline; }
+    .responsive li a { display: block; text-align: center;  padding: 3px; }
+    .responsive li a:hover { padding: 3px; border: none; }
 
-    .nav-item {
-      line-height: 25px;
-    }
-
-    .responsive {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 50px;
-        background: rgba(0, 0, 0, 0.85);
-        padding: 10px 0;
-        -webkit-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .icon {
-        float: right;
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 10px;
-        font-size: 1.5em;
-        color: #fff;
-    }
-
-    .responsive li {
-        float: none;
-        display: inline;
-    }
-
-    .responsive li a {
-        display: block;
-        text-align: center;
-        padding: 3px;
-
-    }
     /* RESPONSIVE NAV BAR ENDS*/
 
     #wall {
         background: url("../assets/photoshop-interface-1834294_640.jpg");
         background-size: cover;
         background-position: top;
+    }
+
+    video {
+      display: none;
     }
 
     .bio {

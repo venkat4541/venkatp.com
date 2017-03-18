@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     // Nav bar min-max animation
     $(window).scroll(function() {
-        if ($(document).scrollTop() > 300) {
+        if ($(document).scrollTop() > 800) {
             $('header').addClass('minimize');
             $('#logo').addClass('logo-min');
             $('li.nav-item').addClass('nav-item-min');
@@ -38,7 +38,7 @@ $(document).ready(function(){
             $('#icon').html('&#9776;');
         }
         e.preventDefault();
-        var pos = $(id).offset().top - 40;
+        var pos = $(id).offset().top - 50;
         $('body, html').animate({scrollTop: pos}, "slow");
     });
 
